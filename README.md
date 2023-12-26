@@ -117,42 +117,4 @@ API untuk mengunggah sampul album
 
 
 
-## Menambah Album Like
-
-API menambahkan like pada album
-
-**URL** : `/albums/{id}/likes`
-
-**Method** : `POST`
-
-## Respon Sukses
-
-**Code** : `201 OK`
-
-**Content example**
-
-```json
-{
-  "status": "success",
-  "message": "Like Berhasil Ditambahkan"
-}
-```
-
-## Respons yang akan dikembalikan oleh endpoint GET /albums/{id}:
-
-**Code** : `200 OK`
-
-**Content example**
-
-```json
-{
-  "status": "success",
-  "data": {
-    "album": {
-      "id": "album-Mk8AnmCp210PwT6B",
-      "name": "Viva la Vida",
-      "coverUrl": "http://...."
-    }
-  }
-}
-```
+![alt text](https://github.com/vinsensiuschristo/OpenMusic-API/blob/main/image/Dicoding.jpg?raw=true)
