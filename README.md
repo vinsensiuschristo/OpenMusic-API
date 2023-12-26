@@ -1,5 +1,47 @@
-# Open Music API
+Open Music API
+---
+## Registrasi dan Autentikasi Pengguna
 
+![alt text](https://github.com/vinsensiuschristo/OpenMusic-API/blob/main/image/Dicoding-v2-01.png?raw=true)
+
+---
+
+## Pengelolaan Data Playlist
+
+![alt text](https://github.com/vinsensiuschristo/OpenMusic-API/blob/main/image/Dicoding-v2-02.png?raw=true)
+---
+
+## Menerapkan Data Validation
+
+Menerapkan proses Data Validation pada Request Payload sesuai spesifikasi berikut:
+
+- POST /users:
+    - username : string, required.
+    - password : string, required.
+    - fullname : string, required.
+
+
+- POST /authentications:
+    - username : string, required.
+    - password : string, required.
+
+
+- PUT /authentications:
+  - refreshToken : string, required.
+
+
+- DELETE /authentications:
+  - refreshToken : string, required.
+
+
+- POST /playlists:
+  - name : string, required.
+
+
+- POST /playlists/{playlistId}/songs
+  - songId : string, required.
+
+---
 ## Ekspor Lagu Pada Playlist
 
 **URL** : `/export/playlists/{playlistId}`
