@@ -67,6 +67,8 @@
 }
 ```
 
+---
+
 ## Mengunggah Sampul Album
 
 API untuk mengunggah sampul album
@@ -116,5 +118,19 @@ API untuk mengunggah sampul album
 ```
 
 
+---
 
-![alt text](https://github.com/vinsensiuschristo/OpenMusic-API/blob/main/image/Dicoding.jpg?raw=true)
+## Endpoint Likes Album
+![alt text](https://github.com/vinsensiuschristo/OpenMusic-API/blob/main/image/Dicoding-Fundamental-Backend.png?raw=true)
+
+---
+
+## Server-side Cache
+
+- Menerapkan server-side cache pada jumlah yang menyukai sebuah album (GET /albums/{id}/likes).
+- Cache bertahan selama 30 menit.
+- Respons yang dihasilkan dari cache memiliki custom header properti X-Data-Source bernilai “cache”.
+- Cache dihapus setiap kali ada perubahan jumlah like pada album dengan id tertentu.
+- Memory caching engine menggunakan Redis.
+
+---
